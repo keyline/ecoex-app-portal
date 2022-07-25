@@ -4,6 +4,7 @@ use App\Models\Recycler;
 use App\Models\CommonModel;
 class Home extends BaseController
 {
+    /* change test */
     public function index()
     {
         $session                = \Config\Services::session();
