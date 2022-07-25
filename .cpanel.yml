@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/keyline1/public_html/dev/ecoex_portaldev/
+    - /bin/cp * $DEPLOYPATH
