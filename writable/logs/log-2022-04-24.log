@@ -1,0 +1,104 @@
+CRITICAL - 2022-04-24 23:16:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get_where()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:19:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:20:59 --> Call to a member function query() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:24:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:24:47 --> Class 'App\Models\CI_Model' not found
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Autoloader/Autoloader.php(264): include_once()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Comp...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Comp...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(19): spl_autoload_call('App\\Models\\Comp...')
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-24 23:25:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:26:39 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:26:56 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:27:17 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-24 23:28:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:28:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:29:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:30:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(21): App\Models\Company->getCompanyDetailByName('test company666')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-24 23:40:57 --> Class 'CodeIgniter\Database\mysql\Connection' not found
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Database/Database.php(56): CodeIgniter\Database\Database->initDriver('mysql', 'CodeIgniter\\Dat...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(97): CodeIgniter\Database\Config::connect('default')
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(19): CodeIgniter\Model->__construct()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->storeCompany()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,11 @@
+CRITICAL - 2022-05-18 00:58:27 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/companyRegistrationStepFour.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 270, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('companyRegistra...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/CompanyController.php(145): view('companyRegistra...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\CompanyController->companyRegistration('4')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,28 @@
+CRITICAL - 2022-06-10 00:33:33 --> Class 'CommonModel' not found
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/inc/he...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/recycler/change-password.php(1): view('recycler/inc/he...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/change...', Array, true)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(301): view('recycler/change...', Array)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->changePassword()
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-10 00:33:51 --> Call to a member function find_data() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/inc/he...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/recycler/change-password.php(1): view('recycler/inc/he...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/change...', Array, true)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(301): view('recycler/change...', Array)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->changePassword()
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

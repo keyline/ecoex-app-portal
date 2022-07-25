@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Ecoex Portal</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/jquery.simplefileinput.css">
+    <!-- Main Style -->
+    <link href="css/local.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- Responsive Style -->
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+
+    <link href="http://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
+    <style>
+        /* body,html {
+    height:100%;
+    min-height: 100%;
+    width: 100%;
+    margin: 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+@media (max-width: 1024px) {
+    body, html {
+        height: 100%;
+    }
+} */
+
+
+
+        #msform fieldset:not(:first-of-type) {
+            display: none
+        }
+
+    </style>
+</head>
+
+<body class="afterlogin_dashboard">
+
+    <!-- Start Content Section ==================================================-->
+
+    <div class="manage-quotes-top">
+        <div class="manage-quotes-page">
+            <div class="manage-quotes-topbar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="manage-quotes-info">
+                            <div class="inquiry-details">
+                                <p>Manage Inquiries</p> <span>/</span>
+                                <p>Inquiries</p> <span class="in-black">/</span>
+                                <p class="in-black">Inquiry Details</p>
+                            </div>
+                            <!------------|| NAV BAR STARTS ||------------>
+                            <div class="topPanel">
+                                <div class="topPanel-no">
+                                    #12345
+                                </div>
+                                <nav class="navbar navbar-expand-xl navbar-light w-100">
+                                    <a class="navbar-brand" href="<?php echo $database->base_url; ?>">
+                                        <img src="<?php echo $database->base_url; ?>images/logo.svg" alt="" class="logo img-fluid">
+                                    </a>
+                                    <button class="navbar-toggler x collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse h-md-100" id="navbarSupportedContent">
+                                        <ul class="navbar-nav h-md-100" id="nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Inquiry Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Queries</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="../ecoex-portal-html/recyclerFlow-manageInquiries-bid.html">Bids</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <!------------|| NAV BAR ENDS ||------------>
+                            <div class="manageInquiries-bid">
+                                <div class="col-lg-4 p-0">
+                                    <div class="bid-inner plastic">
+                                        <p>Plastic<span>|</span>EPR</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 p-0">
+<!--                                    <div class="bid-program">-->
+                                    <div class="bid-inner rigid-drop">
+                                        <div class="dropdown">
+                                            <button class="rigid-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                                Rigid
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Rigid1</a>
+                                                <a class="dropdown-item" href="#">Rigid2</a>
+                                                <a class="dropdown-item" href="#">Rigid3</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                <div class="col-lg-2 p-0">
+                                    <div class="bid-inner">
+                                        <div class="dropdown">
+                                            <button class="rigid-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                                PET
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">PET1</a>
+                                                <a class="dropdown-item" href="#">PET2</a>
+                                                <a class="dropdown-item" href="#">PET3</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                
+                                <div class="col-lg-4 p-0">
+                                    <div class="bid-program">
+                                <div class="bid-inner bid-green">
+                                    <div class="dropdown">
+                                        <a class="btn-chart dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                                            Comparative Chart
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">PET1</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bid-inner sort">
+                                    <div class="sort-action">
+                                        <a href="#" class="sort-btn"><i class="fa fa-filter" aria-hidden="true"></i>filter</a>
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="generalInfo-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="manageInquiries-inquiryDetails-inner manageInquiries-inquiryDetails-inner-2">
+                            <div class="manageInquiries-inquiryDetails-general">
+                                <h3>General Info</h3>
+                            </div>
+                            <div class="manageInquiries-inquiryDetails-button">
+
+                                <div class="ellipsis-action">
+                                    <a href="#" class="ellipsis-btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="generalInfo-info general-border-box manageInquiries-inquiryDetails-borderBox">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Inquiry for</h5>
+                                        <p>E-waste Scrap Dealer</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Type of Inquiry</h5>
+                                        <p>Buy</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Inquiry Start Date</h5>
+                                        <p>22/03/22</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Inquiry Start Time</h5>
+                                        <p>11:30am</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Inquiry End Date</h5>
+                                        <p>22/03/22</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Inquiry End Time</h5>
+                                        <p>6:30pm</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Inquiry Discription</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus mi in egestas ac ac tincidunt auctor tortor.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Inquiry Access Type</h5>
+                                        <p>Limited</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Attach Document</h5>
+                                        <p>RFQ .pdf</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6">
+                                    <div class="generalInfo-box">
+                                        <h5>Documents Required</h5>
+                                        <p>GST & PAN card</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="generalInfo-inner manageInquiry-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <bid class="bid-inner">
+                            <div class="manage-quotes-inner">
+                                <div class="table-part manageInquiry-tabble manageInquiry-tabble-2">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Sub-Category</th>
+                                                <th>Item</th>
+                                                <th>Total Qty</th>
+                                                <th>Bidding UOM</th>
+                                                <th>State</th>
+                                                <th>Quantity</th>
+                                                <th>Milestone(Month)</th>
+                                                <th>Milestone(Qty)</th>
+                                                <th>Payment</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Building Material</td>
+                                                <td>Pavement Blocks</td>
+                                                <td>10,000KG</td>
+                                                <td>KG</td>
+                                                <td class="form-border-2">Arunachal Pradesh</td>
+                                                <td>1000Kg</td>
+                                                <td>January</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>Feburary</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>March</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border form-border-2"></td>
+                                                <td class="form-border"></td>
+                                                <td class="form-border">April</td>
+                                                <td class="form-border">100KG</td>
+                                                <td class="form-border">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2">Punjab</td>
+                                                <td>1000Kg</td>
+                                                <td>January</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>Feburary</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>March</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border form-border-2"></td>
+                                                <td class="form-border"></td>
+                                                <td class="form-border">April</td>
+                                                <td class="form-border">100KG</td>
+                                                <td class="form-border">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2">Haryana</td>
+                                                <td>1000Kg</td>
+                                                <td>January</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>Feburary</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>March</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border form-border-2"></td>
+                                                <td class="form-border"></td>
+                                                <td class="form-border">April</td>
+                                                <td class="form-border">100KG</td>
+                                                <td class="form-border">20%</td>
+                                            </tr>
+
+                                            <!--                                            <div class="form-border">-->
+                                            <tr>
+                                                <td class="form-border-3">Building Material</td>
+                                                <td class="form-border-3">Pavement Blocks</td>
+                                                <td class="form-border-3">10,000KG</td>
+                                                <td class="form-border-3">KG</td>
+                                                <td class="form-border-2">Arunachal Pradesh</td>
+                                                <td>1000Kg</td>
+                                                <td>January</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>Feburary</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>March</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border form-border-2"></td>
+                                                <td class="form-border"></td>
+                                                <td class="form-border">April</td>
+                                                <td class="form-border">100KG</td>
+                                                <td class="form-border">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2">Punjab</td>
+                                                <td>1000Kg</td>
+                                                <td>January</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>Feburary</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>March</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border form-border-2"></td>
+                                                <td class="form-border"></td>
+                                                <td class="form-border">April</td>
+                                                <td class="form-border">100KG</td>
+                                                <td class="form-border">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2">Haryana</td>
+                                                <td>1000Kg</td>
+                                                <td>January</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>Feburary</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border-2"></td>
+                                                <td></td>
+                                                <td>March</td>
+                                                <td>100KG</td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="form-border form-border-2"></td>
+                                                <td class="form-border"></td>
+                                                <td class="form-border">April</td>
+                                                <td class="form-border">100KG</td>
+                                                <td class="form-border">20%</td>
+                                            </tr>
+                                            <!--                                                </div>-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </bid>
+                    </div>
+                </div>
+            </div>
+            <div class="generalInfo-inner manageInquiry-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <bid class="bid-inner">
+                            <bid class="bid-submit">
+                                <div class="bid-plastic invited-sellers">
+                                    <p>Invited Sellers</p>
+                                </div>
+                            </bid>
+                            <div class="manage-quotes-inner">
+                                <div class="table-part manageInquiry-tabble">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="table-fix">Company Name</th>
+                                                <th>Deal In</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="table-fix">Namo E waste management</td>
+                                                <td>Plastic, E-waste & Rubber</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td class="table-fix">Paper Recycling Company</td>
+                                                <td>Plastic & E-waste</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-fix">Eco Wise Waste Management Pvt. Ltd.</td>
+                                                <td>Plastic</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-fix">Eco Wise Waste Management Pvt. Ltd.</td>
+                                                <td>Plastic & E-waste</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </bid>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- End Content Section ==================================================-->
+
+
+
+    <!-- ======================= JQuery libs =========================== -->
+    <!-- Main jQuery -->
+    <script src="js/jquery-min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simplefileinput.min.js"></script>
+    <!-- ======================= End JQuery libs =========================== -->
+
+    <script src="js/custom.js"></script>
+
+
+
+
+</body>
+
+</html>

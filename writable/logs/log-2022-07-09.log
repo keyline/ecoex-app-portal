@@ -1,0 +1,117 @@
+ERROR - 2022-07-09 01:09:14 --> Unknown column 'ecoex_target.published' in 'where clause'
+CRITICAL - 2022-07-09 01:09:14 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(32): App\Models\CommonModel->find_data('ecoex_target', 'array', Array, 'ecoex_target.*,...', Array, '', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-07-09 01:10:48 --> Unknown column 'ecoex_target.published' in 'where clause'
+CRITICAL - 2022-07-09 01:10:48 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(32): App\Models\CommonModel->find_data('ecoex_target', 'array', Array, 'ecoex_target.*,...', Array, '', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-07-09 01:11:19 --> Unknown column 'ecoex_target.published' in 'where clause'
+CRITICAL - 2022-07-09 01:11:19 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(32): App\Models\CommonModel->find_data('ecoex_target', 'array', Array, 'ecoex_target.*,...', Array, '', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-07-09 01:27:34 --> Invalid file: admin/layout/currentPost.php
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layout/cu...')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/cu...', Array, true)
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(50): view('admin/layout/cu...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-07-09 01:30:14 --> Call to a member function getFlashdata() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/cu...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(50): view('admin/layout/cu...', Array)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-07-09 01:31:24 --> Call to a member function get() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-09 03:21:26 --> Invalid file: admin/layout/unapprovedPost.php
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layout/un...')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/un...', Array, true)
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(51): view('admin/layout/un...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->unapprovedPost()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-07-09 06:41:22 --> Unknown column 'ecoex_state.state_title' in 'field list'
+CRITICAL - 2022-07-09 06:41:22 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/admin/layout/currentPost.php(58): App\Models\CommonModel->find_data('ecoex_target_by...', 'array', Array, 'ecoex_target_by...')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/cu...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(88): view('admin/layout/cu...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-09 07:02:18 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/admin/layout/currentPost.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 113, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/cu...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(88): view('admin/layout/cu...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-09 07:05:11 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/admin/layout/currentPost.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 114, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/cu...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(88): view('admin/layout/cu...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-09 07:05:33 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/admin/layout/currentPost.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 114, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/cu...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(88): view('admin/layout/cu...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-09 07:07:54 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/admin/layout/currentPost.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 114, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/cu...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/PostController.php(88): view('admin/layout/cu...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\PostController->currentPost()
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PostController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-07-09 07:24:56 --> Column count doesn't match value count at row 1
+ERROR - 2022-07-09 07:27:00 --> Column count doesn't match value count at row 1
+ERROR - 2022-07-09 07:28:07 --> Column count doesn't match value count at row 1

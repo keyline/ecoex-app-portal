@@ -1,0 +1,33 @@
+CRITICAL - 2022-05-09 01:40:18 --> Cannot use object of type stdClass as array
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('brand/addTarget...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(170): view('brand/addTarget...', Array)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->addTargetByDistrict()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 01:41:26 --> Cannot use object of type stdClass as array
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('brand/addTarget...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(170): view('brand/addTarget...', Array)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->addTargetByDistrict()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-09 04:46:12 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/brand/editTarget.php(36): CodeIgniter\Model->__call('getBusinessSubC...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('brand/editTarge...', Array, true)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(92): view('brand/editTarge...', Array)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->editTarget()
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

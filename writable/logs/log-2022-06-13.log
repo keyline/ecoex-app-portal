@@ -1,0 +1,24 @@
+CRITICAL - 2022-06-13 03:04:16 --> Call to a member function getBusinessCategoryByParentId() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/in...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(72): view('admin/layout/in...', Array)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->dashboard()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-13 06:28:39 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/keyline1/...', 304, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(304): count(NULL)
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->addBusinessCategoryData()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-13 06:39:02 --> Call to a member function getLastQuery() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->addBusinessCategoryData()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

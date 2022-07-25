@@ -1,0 +1,134 @@
+CRITICAL - 2022-05-12 04:16:56 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/recycler/addInventoryByState.php(3): CodeIgniter\Model->__call('getItemByID', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/addInv...', Array, true)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(118): view('recycler/addInv...', Array)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->addInventoryByState()
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 04:19:40 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/recycler/addInventoryByState.php(3): CodeIgniter\Model->__call('getItemByID', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/addInv...', Array, true)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(118): view('recycler/addInv...', Array)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->addInventoryByState()
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 04:20:18 --> Object of class App\Models\Recycler could not be converted to string
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->addInventoryByState()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-12 04:20:33 --> Object of class App\Models\Recycler could not be converted to string
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->addInventoryByState()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-12 04:20:47 --> Object of class App\Models\Recycler could not be converted to string
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->addInventoryByState()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-12 04:21:21 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/recycler/addInventoryByState.php(3): CodeIgniter\Model->__call('getItemByID', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/addInv...', Array, true)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(117): view('recycler/addInv...', Array)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->addInventoryByState()
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 04:22:18 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/recycler/addInventoryByState.php(3): CodeIgniter\Model->__call('getItemByID', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/addInv...', Array, true)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(117): view('recycler/addInv...', Array)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->addInventoryByState()
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 04:26:17 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/recycler/inventoryList.php(64): CodeIgniter\Model->__call('getStateAllocat...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('recycler/invent...', Array, true)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(169): view('recycler/invent...', Array)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->inventoryList()
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#9 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 04:33:13 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(202): CodeIgniter\Model->__call('getTargetDataBy...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->editInventory()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-12 04:35:16 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(202): CodeIgniter\Model->__call('getTargetDataBy...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->editInventory()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-12 04:35:53 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(202): CodeIgniter\Model->__call('getTargetDataBy...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->editInventory()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-12 04:36:37 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(202): CodeIgniter\Model->__call('getTargetDataBy...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->editInventory()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-12 04:37:03 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Recycler/DashboardController.php(202): CodeIgniter\Model->__call('getTargetDataBy...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->editInventory()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-12 04:37:27 --> Class 'App\Controllers\Recycler\Brand' not found
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Recycler\DashboardController->editInventoryData()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recycler\DashboardController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

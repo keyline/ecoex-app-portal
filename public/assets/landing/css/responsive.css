@@ -1,0 +1,71 @@
+@media (min-width: 1367px) {
+    
+}
+@media (max-width: 1199px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (min-width: 991px) {
+    
+}
+@media (max-width: 992px) {
+.market-header-part .header_nav{justify-content: flex-start;}	
+}
+@media (max-width: 990px) {
+.productdetails_image {
+    text-align: center;
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width: 767px) {
+    .marketplace_middle_top .market-togglebtn .ui-segment{
+        margin: 0 auto 20px;
+        display: table;
+    }
+    .marketplace_middle_top .market_top_sortby {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+	.headeer_logoleft .sidebar-brand {
+    	text-align: center;
+	}
+
+}
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 520px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+    
+}
+
+@media (max-width: 360px) {
+    .marketplace_middle_top .market-togglebtn .ui-segment span.option {
+        width: 100%;
+    }
+}

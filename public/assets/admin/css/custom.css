@@ -1,0 +1,309 @@
+/* Import styles --------------------------------------------------------*/
+@import url("bootstrap.min.css");
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+body { font-family: 'Lato', sans-serif; font-weight: 400; line-height: 1.25; font-size: 14px; }
+* { margin: 0; padding: 0; }
+a { color: #a1a1a1; text-decoration: none; outline: none; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear; }
+a:hover { text-decoration: none; color: var(--primariy); outline: none; border: none; }
+a:hover, a:focus { color: var(--primariy); }
+img { margin: 0px; padding: 0px; outline: none; border: none; max-width: 100%; max-height: 100%; }
+p { padding: 0; line-height: 1.25; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+a:focus { outline: medium none; }
+a:hover, a:focus { text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin: 0; font-family: 'Lato', sans-serif; }
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+.form-control:focus { border-color: var(--primariy); box-shadow: none; }
+/*====================-------basic style end-------------==============================*/
+
+/* ================ login pages ============== */
+:root {  --primariy:#48974e;
+ --lightgreen:#a8cf45;
+}
+/* ================ Recycler Flow (Manage Quotes) pages ============== */
+
+.manage-quotes-top .manage-quotes-page { margin: 0px 15px; }
+/*
+.background {
+  filter: blur(20px);
+  width: 150%;
+  top: -25%;
+  margin: 0 auto;
+  left: -25%;
+  padding: 0;
+  position: absolute;
+  z-index: 0;
+}
+*/
+
+.manage-quotes-top .manage-quotes-page .centeredContent { height: 100%; z-index: 1; /*  position: absolute;*/
+/*  width: 100%;*/
+text-align: center; display: inline; justify-content: center; /* margin: 0 auto; */
+-webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE10+/Edge */ user-select: none; /* Standard */ }
+.manage-quotes-top .manage-quotes-page .switch { position: relative; display: inline-block; width: 230px; height: 38px; font-family: 'Lato', sans-serif; margin: 0;/*    background-color: #000;*/
+}
+/* Hide default HTML checkbox */
+.manage-quotes-top .manage-quotes-page .switch input { opacity: 0; width: 0; height: 0; }
+/* The slider */
+.manage-quotes-top .manage-quotes-page .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; -webkit-transition: .4s; transition: .4s; }
+.manage-quotes-top .manage-quotes-page .slider:before { position: absolute; content: ""; /*  height: 100%;*/
+width: 48%; height: 30px; left: 0; top: 4px; margin: 0px 5px; background-color: var(--primariy); -webkit-transition: .4s; transition: .4s; }
+.manage-quotes-top .manage-quotes-page input:checked ~ .switchTextLeft { color: #777777; font-size: 15px; }
+.manage-quotes-top .manage-quotes-page input:checked ~ .switchTextMiddle { color: #777777; font-size: 15px; }
+.manage-quotes-top .manage-quotes-page input:checked ~ .switchTextRight { color: #fff; font-size: 15px; }
+.manage-quotes-top .manage-quotes-page input:checked + .slider:before { -webkit-transform: translateX(100%); -ms-transform: translateX(100%); transform: translateX(100%); }
+/* Rounded sliders */
+.manage-quotes-top .manage-quotes-page .slider.round { border-radius: 5px 5px; background-color: #fff; }
+.manage-quotes-top .manage-quotes-page .slider.round:before { border-radius: 5px 5px; }
+.manage-quotes-top .manage-quotes-page .switchTextLeft, .switchTextRight, .switchTextMiddle { z-index: 5; transition: 500ms; position: absolute; }
+.manage-quotes-top .manage-quotes-page .switchTextLeft { transform: translate(-80px, 7.5px); color: #fff; padding-top: 1px; font-size: 15px;/*
+    position: absolute;
+    right: 72px;
+*/
+}
+.manage-quotes-top .manage-quotes-page .switchTextMiddle { transform: translate(-80px, 7.5px); color: #fff; padding-top: 1px; font-size: 15px;/*
+    position: absolute;
+    right: 72px;
+*/
+}
+.manage-quotes-top .manage-quotes-page .switchTextRight { transform: translate(36px, 7.5px); color: #777; padding-top: 1px; font-size: 15px; }
+.manage-quotes-top .manage-quotes-page .limited-part { display: flex; justify-content: space-between; width: 100%; align-items: center; position: -webkit-sticky; position: sticky; top: 0;/*  padding-bottom: 15px;*/
+}
+.manage-quotes-top .manage-quotes-page .sort-action .sort-btn { border: 1px solid var(--primariy); height: 38px; width: 100px; background-color: #fff; font-size: 15px; color: var(--primariy); display: flex; justify-content: center; align-items: center; border-radius: 5px; }
+.manage-quotes-top .manage-quotes-page .sort-action .sort-btn i { padding-right: 8px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner table { font-family: 'Lato', sans-serif; font-size: 15px; border-collapse: collapse; width: 100%; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner { width: 100%; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner td, .manage-quotes-page .manage-quotes-inner th { padding: 12px 10px; border-bottom: 1px solid #D9E0E1; /*    background-color: #fff;*/
+/*  text-align: left;*/
+margin: 0; text-align: center; }
+/* .manage-quotes-page .manage-quotes-inner tbody tr:nth-child(2n){
+  background-color: #eee;
+} */
+.manage-quotes-inner tbody {
+    background: #fff;
+}
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner th { /*position: sticky;*/ top: 68px; background-color: #D9E0E1; color: #151515; text-align: center; white-space: nowrap; }
+/* .manage-quotes-page .manage-quotes-inner .manage-number{
+  padding-left: 25px;
+} */
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .form-timeing p { background-color: #f6faf6; color: #012E38; font-size: 14px; padding: 8px 10px; margin: 0 auto; width: 200px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .form-timeing.yellow p { background-color: #fffaf3; color: #FF990F; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner td .view-btn { border: 1px solid var(--primariy); background-color: #fff; font-size: 15px; color: var(--primariy); border-radius: 5px; padding: 4px 15px; white-space: nowrap; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner td .view-action-2 { margin-top: 18px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner td .view-action-2 .view-btn { background-color: var(--primariy); color: #fff; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-topbar { position: sticky; top: 0; background-color: #f2f4f5; padding: 15px 0px; z-index: 9; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info { width: 100%; }
+.manage-quotes-top { background-color: #f2f4f5; padding-bottom: 15px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .manage-rigid { white-space: nowrap; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .manage-rigid span { color: #d9e0e1; }
+/* ================ Recycler Flow (Manage Quotes -> Inquiry Details) pages ============== */
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .inquiry-details { display: flex; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .inquiry-details p { color: #777777; font-size: 15px; margin: 0; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .inquiry-details .in-black { color: #333; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .inquiry-details span { padding: 0px 8px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner { background-color: #fff; padding: 15px; margin-bottom: 15px; border-radius: 6px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner h3 { /*    padding-bottom: 15px;*/
+color: #151515; font-weight: 600; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info { padding: 15px 0px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box { border: solid #D9E0E1; border-width: 1px 0px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info .generalInfo-box { padding-bottom: 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info .generalInfo-box h5 { color: #333; font-size: 15px; padding-bottom: 8px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info .generalInfo-box p { color: #777777; font-size: 18px; margin: 0; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .milestone { color: #333; font-size: 15px; padding-bottom: 8px; padding-top: 30px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.generalInfo-info-2 { padding: 0px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.generalInfo-info-2 .generalInfo-box { padding-bottom: 0px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.generalInfo-info-2 .generalInfo-box p { padding-bottom: 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .intro { max-width: 1280px; margin: 1em auto; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll { position: relative; width: 100%; z-index: 1; margin: auto; overflow: auto; border: 1px solid #d9e0e1; border-radius: 4px;/*  height: 350px;*/
+}
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll table { width: 100%; min-width: 1280px; margin: auto; border-collapse: separate; border-spacing: 0;/*    border: 1px solid #D9E0E1;*/
+   
+}
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-wrap { position: relative; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll th, .manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll td { padding: 15px; border: 1px solid #D9E0E1; border-width: 0px 1px 0px 0px; background: #fff; vertical-align: top; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll td { padding: 15px 44px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll td:last-child { border: 1px solid #fff; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll thead th { background: #333; color: #fff; position: -webkit-sticky; position: sticky; top: 0; }
+/* safari and ios need the tfoot itself to be position:sticky also */
+
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll tfoot th, .manage-quotes-top .manage-quotes-page .generalInfo-inner .table-scroll tfoot td { position: -webkit-sticky; position: sticky; bottom: 0; background: #666; color: #fff; z-index: 4; }
+/*
+a:focus {
+  background: red;
+} 
+*/
+
+.manage-quotes-top .manage-quotes-page .generalInfo-inner th:first-child { position: -webkit-sticky; position: sticky; left: 0; z-index: 2; background: #D9E0E1; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner thead th:first-child, .manage-quotes-top .manage-quotes-page .generalInfo-inner tfoot th:first-child { z-index: 5; }
+/*navbar*/
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #D9E0E1; padding-top: 15px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel .collapse.navbar-collapse { justify-content: flex-end; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav { padding: 0; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel .navbar { margin-bottom: 0px!important; height: 30px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .top-band > .container-fluid { padding-left: 0; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav[class*="navbar-expand"] .navbar-nav .nav-link { font-size: 14px; font-weight: 600; color: var(--secondaryColor); padding: 0px 16px; position: relative; height: 100% !important; align-items: center; display: flex; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav[class*="navbar-expand"] .navbar-nav .nav-link.active { border: solid var(--primariy); border-width: 0px 0px 2px; color: var(--primariy); }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav[class*="navbar-expand"] .navbar-nav .nav-link > span { text-transform: lowercase; }
+/* ANIMATED X */
+
+.manage-quotes-top .navbar-toggler.x:not(.collapsed) { padding: 5px 0px 5px 5px; transition: all 0.2s; }
+.manage-quotes-top .navbar-light .navbar-toggler { padding: 7px; border: none; background: var(--primariy); border-radius: 0; }
+.manage-quotes-top .navbar-toggler .icon-bar + .icon-bar { margin-top: 4px; }
+.manage-quotes-top .navbar-toggler .icon-bar { width: 22px; -webkit-transition: all 0.2s; transition: all 0.2s; display: block; width: 22px; height: 2px; border-radius: 1px; background: #fff; }
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { color: var(--textColor); }
+.navbar-brand { margin: 0; }
+/* ANIMATED X */
+.manage-quotes-top .navbar-toggler.x .icon-bar:nth-of-type(1) { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); -webkit-transform-origin: 10% 10%; -ms-transform-origin: 10% 10%; transform-origin: 10% 10%; }
+.manage-quotes-top .navbar-toggler.x .icon-bar:nth-of-type(2) { opacity: 0; filter: alpha(opacity=0); }
+.manage-quotes-top .navbar-toggler.x .icon-bar:nth-of-type(3) { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 10% 90%; -ms-transform-origin: 10% 90%; transform-origin: 10% 90%; }
+/* ANIMATED X COLLAPSED */
+.manage-quotes-top .navbar-toggler.x.collapsed .icon-bar:nth-of-type(1) { -webkit-transform: rotate(0); -ms-transform: rotate(0); transform: rotate(0); }
+.manage-quotes-top .navbar-toggler.x.collapsed .icon-bar:nth-of-type(2) { opacity: 1; filter: alpha(opacity=100); }
+.manage-quotes-top .navbar-toggler.x.collapsed .icon-bar:nth-of-type(3) { -webkit-transform: rotate(0); -ms-transform: rotate(0); transform: rotate(0); }
+/* END ANIMATED X */
+
+.manage-quotes-top .navbar-light .navbar-nav .active > .nav-link, .manage-quotes-top .navbar-light .navbar-nav .nav-link.active, .manage-quotes-top .navbar-light .navbar-nav .nav-link.show, .manage-quotes-top .navbar-light .navbar-nav .show > .nav-link { color: var(--textColor); border-bottom: 1px solid var(--secondaryColor); }
+/* ================ Recycler Flow (Manage Quotes -> Bid) pages ============== */
+
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .bid-submit { display: flex; justify-content: space-between; align-items: center; padding: 0px 15px 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .bid-submit .bid-plastic p { font-size: 18px; color: #333; margin: 0; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .bid-submit .bid-plastic p span { padding: 0px 8px; color: #D9E0E1; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .bid-submit .submit-action .submit-btn { background-color: var(--primariy); color: #fff; font-size: 15px; border-radius: 5px; padding: 5px 30px; white-space: nowrap; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner th { position: initial; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner td, .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner th { text-align: left; }
+/* .manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner table{
+  width: auto;
+ 
+} */
+
+/* .manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner .table-part{
+  position: relative;
+}
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner .table-part::before{
+  position: absolute;
+  content: '';
+  background-color: #D9E0E1;
+  width: 100%;
+  height:68px;
+  left: 0;
+  top: 0;
+} */
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner .table-part .table-fix { width: 600px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner .pt100 .form-control { width: 150px; background-color: #d9e0e17a; border: none; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner .mt100 .form-control { width: 150px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner .form-control::placeholder {
+ color: #333;
+ font-family: 'Lato', sans-serif;
+ font-size: 15px;
+}
+.manage-quotes-top .manage-quotes-page .generalInfo-inner.bid-inner { padding: 15px 0px 0px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .manage-quotes-inner tr:last-child td { border: none; }
+/* ================ Recycler Flow (Manage Inquiries) pages ============== */
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .switch { width: 300px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .switchTextLeft { transform: translate(-122px, 7.5px); }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .switchTextRight { transform: translate(80px, 7.5px); }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .switchTextMiddle { transform: translate(0px, 7.5px); color: #777; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .slider:before { width: 32%; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .manage-inquiries-inner { display: flex; align-items: center; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .manage-inquiries-inner .drafts-action { margin-left: 15px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .manage-inquiries-inner .drafts-action .drafts-btn { border: 1px solid var(--primariy); height: 38px; width: 100px; background-color: #fff; font-size: 15px; color: var(--primariy); display: flex; justify-content: center; align-items: center; border-radius: 5px; text-transform: capitalize; position: relative; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .manage-inquiries-inner .drafts-action .drafts-btn .badge { background-color: var(--primariy); color: #fff; position: absolute; border-radius: 50%; height: 22px; width: 22px; right: -7px; top: -10px; display: flex; align-items: center; justify-content: center; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .filter-part { display: flex; align-items: center; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .filter-part .filter-action .filter-btn { border: 1px solid var(--primariy); height: 38px; width: 40px; background-color: #fff; font-size: 15px; color: var(--primariy); display: flex; justify-content: center; align-items: center; border-radius: 5px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .filter-part .filter-action { margin-right: 15px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.inquiries-table td p { margin-bottom: 6px; }
+/* ================ Recycler Flow (Manage Inquiries  -> Drafts -> Inquiry Details) pages ============== */
+
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner { display: flex; justify-content: space-between; align-items: center; padding: 10px 0px 20px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner .manageInquiries-inquiryDetails-button { display: flex; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner .manageInquiries-inquiryDetails-button .edit-action .edit-btn { border: 1px solid var(--primariy); background-color: var(--primariy); color: #fff; font-size: 15px; border-radius: 5px; padding: 8px 15px; white-space: nowrap; text-transform: capitalize; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner .manageInquiries-inquiryDetails-button .comment-action { margin: 0px 25px 0px 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner .manageInquiries-inquiryDetails-button .comment-action .comment-btn { border: 1px solid var(--primariy); color: var(--primariy); font-size: 15px; border-radius: 5px; padding: 8px 25px; white-space: nowrap; text-transform: capitalize; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner .manageInquiries-inquiryDetails-button .ellipsis-action .ellipsis-btn i { font-size: 20px; color: #777; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner .manageInquiries-inquiryDetails-button .ellipsis-action { margin-right: 5px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble { border: 1px solid #D9E0E1; border-radius: 6px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble th, .manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble td {  border: none; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner.manageInquiry-inner .bid-inner .bid-submit { padding-left: 0; border-bottom: 1px solid #D9E0E1; margin-bottom: 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-title { background-color: #EEA000; color: #fff; padding: 10px; font-size: 18px; border-radius: 4px 4px 0px 0px; font-family: 'Lato', sans-serif; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner { background-color: #FFEECC; padding: 15px; border: 1px solid #eea000; border-radius: 0px 0px 4px 4px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .buyer-inner { display: flex; padding-bottom: 20px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .buyer-inner .buyer-admin { color: #151515; font-size: 15px; font-family: 'Lato', sans-serif; padding-right: 10px; /*    white-space: nowrap;*/
+font-weight: 600; width: 135px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .buyer-inner .buyer-content { color: #333; font-size: 15px; font-family: 'Lato', sans-serif; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .top-comments-message { background-color: #EBEEF2; padding: 20px 0px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .form-control::placeholder {
+ color: #333;
+}
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .form-control { border: none; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .comments-button { display: flex; justify-content: flex-end; align-items: center; margin-top: 24px; margin-bottom: 6px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .comments-button .cancel-action .cancel-btn { color: #EEA000; font-size: 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .comments-button .submit-action .submit-btn { background-color: #EEA000; font-size: 15px; color: #fff; border-radius: 5px; padding: 10px 30px; text-transform: capitalize; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part .comments-inner .comments-button .submit-action { margin-left: 40px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box.manageInquiries-inquiryDetails-borderBox { border-width: 1px 0px 0px!important; padding-bottom: 0; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box .comments-part { border-bottom: 1px solid #D9E0E1; padding-bottom: 15px; padding-top: 5px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .generalInfo-info.general-border-box.manageInquiries-inquiryDetails-borderBox .milestone { padding-top: 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .bid-submit .bid-plastic.invited-sellers p { font-size: 24px; font-weight: 600; }
+/* ================ Recycler Flow (Manage Inquiries -> Inquiry Details) pages ============== */
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble.manageInquiry-tabble-2 .form-border { border: solid #D9E0E1; border-width: 0px 0px 1px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble.manageInquiry-tabble-2 .form-border-2 { border: solid #D9E0E1; border-width: 0px 0px 0px 1px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble.manageInquiry-tabble-2 .form-border.form-border-2 { border-bottom: 1px solid #D9E0E1; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble.manageInquiry-tabble-2 .form-border-3 { border-top: 1px solid #D9E0E1; }
+ @media (max-width: 991px) {
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav[class*="navbar-expand"] .navbar-nav .nav-link { font-size: 16px; padding: 10px 20px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav[class*="navbar-expand"] .navbar-nav li.active a:after { left: 10px; right: 10px; }
+}
+ @media (min-width: 1200px) {
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav .h-md-100 { height: 100% !important; }
+}
+ @media (max-width: 1199px) {
+.container { max-width: 100%; }
+.container2 { max-width: 100%; }
+}
+
+
+/* ********|| NAV BAR ENDS ||******** */
+
+
+/*responsive*/
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 991px) {
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner th { top: 0; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .form-timeing p { width: 230px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part { overflow: scroll!important; }
+}
+@media screen and (max-width: 1199px) {
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel .navbar { height: 100%; align-items: self-start; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav[class*="navbar-expand"] .navbar-nav .nav-link { justify-content: flex-end; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel { align-items: flex-start; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .topPanel nav[class*="navbar-expand"] .navbar-nav .nav-link { padding: 10px 0px; }
+}
+@media screen and (max-width: 767px) {
+.manage-quotes-top .manage-quotes-page .limited-part { display: block; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .manage-inquiries-inner { display: block; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .manage-inquiries-inner .drafts-action { margin-top: 20px; display: flex; /*    justify-content: center;*/
+margin-left: 0; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info.manage-inquiries-info .limited-part .filter-part { display: flex; align-items: center; /*    justify-content: center;*/
+margin-top: 10px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble th, .manage-quotes-top .manage-quotes-page .manage-quotes-inner .table-part.manageInquiry-tabble td { padding: 10px 12px; width: 100%; }
+}
+ @media screen and (max-width: 480px) {
+.manage-quotes-top .manage-quotes-page .switch { width: 180px;/* background-color: #000; */
+}
+.manage-quotes-top .manage-quotes-page .sort-action .sort-btn { width: 80px; }
+.manage-quotes-top .manage-quotes-page .switchTextLeft { transform: translate(-68px, 7.5px); }
+.manage-quotes-top .manage-quotes-page .switchTextRight { transform: translate(26px, 7.5px); }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .inquiry-details span { padding: 0px 3px; }
+.manage-quotes-top .manage-quotes-page .manage-quotes-info .inquiry-details p { font-size: 13px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .bid-submit .bid-plastic p span { padding: 0px 5px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .bid-inner .bid-submit .bid-plastic p { font-size: 14px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner { display: block; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner h3 { padding-bottom: 15px; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner.manageInquiries-inquiryDetails-inner-2 { display: flex; }
+.manage-quotes-top .manage-quotes-page .generalInfo-inner .manageInquiries-inquiryDetails-inner.manageInquiries-inquiryDetails-inner-2 h3 { padding-bottom: 0!important; }
+}

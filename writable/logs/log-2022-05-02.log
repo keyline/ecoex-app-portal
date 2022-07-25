@@ -1,0 +1,68 @@
+CRITICAL - 2022-05-02 01:17:43 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(318): CodeIgniter\Model->__call('getEmailSetting', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->emailSetting('')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-02 01:18:55 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/admin/layout/addBusinessCategory.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 32, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/ad...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(322): view('admin/layout/ad...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->emailSetting('')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-02 01:43:25 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(336): CodeIgniter\Model->__call('getEmailDataByI...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->editEmailTemplate('2')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-02 01:44:17 --> You must set the database table to be used with your query.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Model.php(722): CodeIgniter\Model->builder()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(336): CodeIgniter\Model->__call('getEmailDataByI...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->editEmailTemplate('2')
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-05-02 02:16:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's a automated system generated email. Do not reply to this email. <br><br>------' at line 1
+ERROR - 2022-05-02 02:17:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's a automated system generated email. Do not reply to this email. <br><br>------' at line 1
+ERROR - 2022-05-02 02:18:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's a automated system generated email. Do not reply to this email. <br><br>------' at line 1
+ERROR - 2022-05-02 02:20:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's a automated system generated email. Do not reply to this email. <br><br>------' at line 1
+ERROR - 2022-05-02 02:51:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20334433224','Gandhinagar',
+            'Dharmendrasinh Chavada','','224455',no' at line 1
+CRITICAL - 2022-05-02 22:19:05 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/companyRegistrationStepOne.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 174, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('companyRegistra...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/CompanyController.php(55): view('companyRegistra...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\CompanyController->companyRegistration('1')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-02 22:53:42 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/CompanyController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 88, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\CompanyController->companyRegistrationStepOneData()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-02 23:43:20 --> Call to a member function getCompanyDetailByID() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->resendEmail('3')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

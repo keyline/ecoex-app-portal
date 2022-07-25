@@ -1,0 +1,66 @@
+CRITICAL - 2022-07-22 01:30:59 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/item-details.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/keyline1/...', 145, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('item-details', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Home.php(627): view('item-details', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Home->itemDetails('VHJhZGVy', 'images', 'email.png')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-22 01:32:23 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/item-details.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/keyline1/...', 145, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('item-details', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Home.php(627): view('item-details', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Home->itemDetails('VHJhZGVy', 'images', 'email.png')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-22 01:39:52 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/item-details.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/keyline1/...', 145, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('item-details', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Home.php(627): view('item-details', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Home->itemDetails('VHJhZGVy', 'images', 'email.png')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-22 01:41:08 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/item-details.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/keyline1/...', 145, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('item-details', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Home.php(627): view('item-details', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Home->itemDetails('VHJhZGVy', 'images', 'email.png')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-22 01:45:05 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/item-details.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/keyline1/...', 145, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('item-details', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Home.php(627): view('item-details', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Home->itemDetails('VHJhZGVy', 'images', 'email.png')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-22 04:07:59 --> count(): Parameter must be an array or an object that implements Countable
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/email-template/inquiry-document-upload.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/home/keyline1/...', 155, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('email-template/...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/User/DashboardController.php(668): view('email-template/...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\User\DashboardController->notifyAdminApproval('MTM=')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\DashboardController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,224 @@
+/* Import styles --------------------------------------------------------*/
+@import url("bootstrap.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body { font-family: 'Lato', sans-serif; font-weight: 400; line-height: 1.25; font-size: 14px; }
+* { margin: 0; padding: 0; }
+a { color: #a1a1a1; text-decoration:none; outline:none; 
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+a:hover { text-decoration: none; color: var(--primariy); outline:none; border:none; }
+a:hover, a:focus {color: var(--primariy);}
+img { margin:0px; padding:0px; outline:none; border:none; max-width:100%; max-height:100%; }
+p { padding: 0; line-height:1.25; }
+ul, ol{list-style:none; margin:0; padding:0;}
+a:focus {outline: medium none;}
+a:hover, a:focus{text-decoration:none;}
+h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin:0; font-family: 'Lato', sans-serif; }
+h1 { font-size:36px; }
+h2 { font-size:30px; }
+h3 { font-size:24px; }
+h4 { font-size:18px; }
+h5 { font-size:16px; }
+h6 { font-size:14px; }
+.form-control:focus {border-color: var(--primariy); box-shadow:none;}
+
+/*====================-------basic style end-------------==============================*/
+
+/* ================ login pages ============== */
+:root{
+    --primariy:#48974e;
+    --lightgreen:#a8cf45;
+}
+
+.loginmain_section { display: flex; flex-direction: row; /* align-items: center; */ width: 100%; height: 100%; margin: auto auto; background: #ffffff; }
+.loginmain_leftimg { width: 20%; height: auto; min-height: 100%; position: relative; background-image: url(../images/lefthand.svg); background-size: cover; }
+.rightdash_img { padding: 25px 0; margin: 0 auto; width: 100%; max-width: 600px; position: relative; }
+.rightsection_form { padding: 2em 0 1em; }
+.rightsection_form .toplogo { text-align: center; margin-bottom: 30px; }
+.rightsection_form .toplogo img { max-width: 200px; }
+.greenheading { color: var(--primariy); }
+.rightsection_form h2 { text-align: center; font-size: 20px; font-weight: 600; }
+.form_section label { color: #000; font-weight: 600; }
+.form_section label.form-check-label { line-height: 26px; }
+.form_section .form-group.form-check { padding-left: 28px; }
+span.red { color: red; }
+button.btn.green { background: var(--primariy); border: none; width: 100%; padding: 8px 15px; }
+button.btn.green:hover { background: var(--lightgreen); }
+.greencheck { accent-color: #48974e; margin-left: -25px; width: 19px; height: 19px; }
+.alreadymember { padding: 25px 0; margin: auto; text-align: center; color: #000; font-weight: 600; }
+.alreadymember.bottomshow { /* position: absolute; bottom: 0; left: 50%; transform: translate(-50%,0); */ }
+.alreadymember a { color: var(--primariy); }
+.alreadymember a:hover { text-decoration: underline; }
+.form_section .form-group .input-group-addon { position: absolute; right: 10px; top: 50%; transform: translate(0, -50%); }
+.loginfrom_center { position: absolute; top: 50%; width: 100%; transform: translate(0, -50%); }
+h3.otpmoble_send { text-align: center; font-size: 17px; margin: 22px 0; }
+.checkbox_forgot { display: flex; justify-content: space-between; }
+.checkbox_forgot a.forgot_link { font-weight: 600; color: var(--primariy); line-height: 27px; }
+.otpinputbox input { width: 40px; height: 40px; border-color: #777777; }
+.resendcode { color: var(--primariy); font-weight: 700; font-size: 20px; }
+.resendmailtopmargin { margin-top: 25%; font-weight: 500; }
+
+
+/* ================ Dashboard pages ============== */
+.dashboard_toppart {
+    position: relative;
+}
+.dashboard_toppart:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: 0;
+    background-color: #00222c;
+}
+.dashboar_logoleft {
+    position: relative;
+    padding: 30px 0;
+    max-width: 94%;
+    margin: auto;
+}
+.dashboar_logoleft img {
+    max-width: 200px;
+}
+.dashboard_form_start {
+    position: relative;
+    padding: 5px 30px;
+    background: #012e38;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #767676;
+    margin: 25px auto 0;
+    max-width: 94%;
+}
+.dashboard_form_start .dashboard_top_tab {
+    display: flex;
+    justify-content: space-around;
+    color: #99abaf;
+    margin-top: -15px;
+}
+.dashboard_top_tab .dashoard_steps {
+    margin: auto;
+    display: table;
+    text-align: center;
+    margin-top: -10px;
+}
+.dashboard_top_tab .dash-step-number {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background: #ddd;
+    border-radius: 40px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.dashboard_top_tab li.active .dashoard_steps .dash-step-number {
+    background: #edb31f;
+    color: #fff;
+}
+.dashboard_top_tab .dashoard_steps .dash-step-name {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.dashboard_top_tab .dashoard_steps .dash-step-info {
+    text-align: left;
+    padding-left: 12px;
+}
+.dashoard_steps .dash-step-name h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.dashoard_steps .dash-step-name h5 {
+    font-size: 14px;
+    font-weight: normal;
+}
+.dashboard_top_tab li.active .dash-step-info h3, 
+.dashboard_top_tab li.active .dash-step-info h5 {
+    color: #fff;
+}
+.dashboard_inner_section fieldset:not(:first-of-type) {
+    display: none
+}
+
+
+.dashboard_inner_section fieldset {
+    position: relative;
+}
+.dashboard_inner_section {
+    position: relative;
+    background: #ffff;
+    border-radius: 20px;
+    max-width: 94%;
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+}
+.dashboard_step_part {
+    display: flex;
+    padding: 20px 20px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+.dashboard_step_part .dashboard_step_left {
+    display: flex;
+    align-items: center;
+}
+.dashboard_step_part .dashboard_step_left .dashboar_leftnum {
+    background: #eef5da;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.dashboard_step_part .dashboard_step_left h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.dashboard_info_inner_section .form-group {
+    margin-bottom: 2rem;
+}
+.dashboard_info_inner_section label {
+    font-weight: 600;
+}
+.dashboard_inner_section .next.action-button {
+    background: #48974e;
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 4px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+.dashboard_inner_section .previous.action-button-previous {
+    background: none;
+    border: none;
+    color: #48974e;
+    padding: 10px 25px;
+    border-radius: 4px;
+    position: absolute;
+    right: 210px;
+    top: 15px;
+    font-weight: 600;
+}
+.dashboard_inner_section .previous.bankpart_back.action-button-previous {
+    right: 135px;
+}
+.dashboard_inner_section .dashboard_formpart {
+    padding: 10px 25px;
+}
+.dashboard_info_inner_section {
+    padding: 0 25px;
+}

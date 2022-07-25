@@ -1,0 +1,548 @@
+/* Import styles --------------------------------------------------------*/
+@import url("bootstrap.min.css");
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+body { font-family: 'Lato', sans-serif; font-weight: 400; line-height: 1.25; font-size: 14px; }
+* { margin: 0; padding: 0; }
+a { color: #a1a1a1; text-decoration: none; outline: none; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; transition: all 0.4s linear; }
+a:hover { text-decoration: none; color: var(--primariy); outline: none; border: none; }
+a:hover, a:focus { color: var(--primariy); }
+img { margin: 0px; padding: 0px; outline: none; border: none; max-width: 100%; max-height: 100%; }
+p { padding: 0; line-height: 1.25; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+a:focus { outline: medium none; }
+a:hover, a:focus { text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; padding: 0; margin: 0; font-family: 'Lato', sans-serif; }
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+.form-control:focus { border-color: var(--primariygreen); box-shadow: none; }
+.btn.focus, .btn:focus {box-shadow:none;}
+.bg-green, .bg-blue{background:var(--primariygreen)!important;}
+.greencheck {
+    accent-color: #48974e;
+    margin-left: -25px;
+    width: 19px;
+    height: 19px;
+}
+
+/*====================-------basic style end-------------==============================*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a8cf45; 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a8cf45; 
+}
+/* ================ login pages ============== */
+:root { --primariy:#48974e;
+ --lightgreen:#a8cf45;
+}
+
+.market-header-part {
+    background: #fff;
+}
+.market-header-part .sidebar-brand img {
+    max-width: 155px;
+}
+.market-header-part .header_nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 0;
+}
+.market-header-part .header_nav .topmenu li {
+    display: inline;
+    padding: 0 12px;
+}
+.market-header-part .header_nav .topmenu li a {
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+.market-header-part .header_nav .topmenu li a:hover{
+    color: var(--primariy);
+    text-decoration: underline;
+}
+.market-header-part .header_nav .loginbtn_right li {
+    padding: 0 6px;
+    display: inline-block;
+}
+.market-header-part .header_nav .loginbtn_right .head_register a {
+    border: 1px solid var(--primariy);
+    color: var(--primariy);
+    padding: 2px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+}
+.market-header-part .header_nav .loginbtn_right .head_register a:hover{
+    background: var(--primariy);
+    color: var(--white);
+}
+.market-header-part .header_nav .loginbtn_right .head_login a {
+    background: var(--primariy);
+    border: 1px solid var(--primariy);
+    color: var(--white);
+    padding: 2px 28px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+}
+.market-header-part .header_nav .loginbtn_right .head_login a:hover{ 
+    color: var(--primariy);
+    background: var(--white);
+}
+
+
+.header_below_section{
+    background: rgb(78,155,78);
+    background: linear-gradient(90deg, rgba(78,155,78,1) 0%, rgba(135,188,72,1) 100%);
+    padding: 30px  0;
+}
+.header_below_section .head_belowconte h1 {
+    color: #ffff;
+    margin-bottom: 10px;
+}
+.header_below_section .head_belowconte h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.header_below_section .head_belowconte p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.marketplace_middle_top {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.marketplace_middle_top .market-togglebtn .ui-segment {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+.marketplace_middle_top .searh-middle button.text-info {
+    color: #444 !important;
+}
+.marketplace_middle_top .searh-middle .input-group, .marketplace_middle_top .searh-middle .input-group input {
+    background: #eee;
+}
+.marketplace_middle_top .market_top_sortby {
+    float: right;
+    margin-right: 25px;
+}
+.marketplace_middle_top .market_top_sortby a {
+    border: 1px solid var(--primariy);
+    color: var(--primariy);
+    padding: 2px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    display: inline-block;
+}
+.marketplace_leftmenu h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.marketplace_leftmenu > ul {
+    padding: 25px 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.marketplace_leftmenu li {
+    padding-bottom: 15px;
+}
+.marketplace_leftmenu li a.dropdown-toggle {
+    padding: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    background: #eee;
+    position: relative;
+}
+.marketplace_leftmenu li a.dropdown-toggle:after{
+    position:absolute;
+    content:"";
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);   
+}
+.marketplace_leftmenu li a {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #000;
+}
+.marketplace_leftmenu li ul {
+    padding: 10px 10px 0;
+}
+.overlayheight {
+    height: 235px;
+    overflow-y: scroll;
+}
+.marketplace_leftmenu li ul li {
+    padding-bottom: 10px;
+}
+.marketplace_middle_part .makettop_prodcttab {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+.marketplace_middle_part .makettop_prodcttab h4 {
+    font-weight: 600;
+    color: var(--primariy);
+    font-size: 16px;
+}
+.markete_prodict_item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.markete_prodict_item .marketprod_img {
+    height: 150px;
+    overflow: hidden;
+	position: relative;
+}
+.markete_prodict_item .marketprod_img img {
+    width: 100%;
+    object-fit: cover;
+}
+.markete_prodict_item .marketprod_img .marketprod_saletag {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+.markete_prodict_item .marketprod_img .marketprod_saletag .tag-text {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+	color: #FFFFFF;
+}
+.markete_prodict_item .marketprod_img .marketprod_saletag .salebg {
+    background: #ff0000;
+}
+.markete_prodict_item .marketprod_img .marketprod_saletag .buybg {
+    background: #7bc900;
+}
+.marketprod_membertag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.marketprod_membertag .membername-text {
+    background: #fff;
+    padding: 5px 15px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+}
+.markete_prodict_item .market_name {
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.markete_prodict_item .market_name h2, .markete_prodict_item .market_name h2 a {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000;
+}
+.markete_prodict_item .marketplae_price {
+    font-size: 16px;
+    font-weight: 600;
+}
+.markete_prodict_item .marketplace_product_info {
+    padding: 5px 15px 30px 15px;
+	position: relative;
+}	
+.markete_prodict_item .marketplace_product_info p {
+    margin-bottom: 8px;
+    color: #999;
+}
+.markete_prodict_item .marketplace_product_info p span {
+    color: #000;
+}
+.marketpro_timetogo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+	width: 100%;
+}
+.marketpro_timeinfo {
+    text-align: center;
+    padding: 5px 15px;
+    background: #4e9b4e;
+    display: table;
+    margin: auto;
+    color: #fff;
+}
+
+
+/* ===-------- product details--------------==== */
+
+.market_header_innerpage {
+    margin-bottom: 45px;
+    box-shadow: 1px 1px 5px #ddd;
+}
+.market_name h2 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.marketplae_price {
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.marketplace_product_info p {
+    font-size: 16px;
+}
+.marketplace_product_info p span {
+    font-weight: 600;
+}
+.market_bothbtn {
+    display: flex;
+}
+.market_bothbtn a.border_btn {
+    border: 1px solid var(--primariy);
+    border-radius: 4px;
+    padding: 7px 30px;
+    display: block;
+    margin-right: 10px;
+    color: var(--primariy);
+    font-weight: 600;
+    background: #fff;
+    text-align: center;
+}
+.market_bothbtn a.border_btn:hover{
+    background: var(--primariy);
+    color: #fff;
+}
+.market_bothbtn a.soild_btn {
+    border: 1px solid transparent;
+    background: var(--primariy);
+    border-radius: 4px;
+    padding: 7px 30px;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.market_bothbtn a.soild_btn:hover{
+    border: 1px solid var(--primariy);
+    color: var(--primariy);
+    background: #fff;
+}
+.market_bothbtn button.soild_btn:hover{
+    border: 1px solid var(--primariy);
+    color: var(--primariy);
+    background: #fff;
+}
+.market_bothbtn button.soild_btn {
+    border: 1px solid transparent;
+    background: var(--primariy);
+    border-radius: 4px;
+    padding: 7px 30px;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.market_bothbtn button.soild_btn:hover{
+    border: 1px solid var(--primariy);
+    color: var(--primariy);
+    background: #fff;
+}
+.product_detailsinfo h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.product_detailsinfo p {
+    font-size: 16px;
+}
+
+/* ===-------- product cart--------------==== */
+
+.market_innerpage_heading {
+    padding-bottom: 20px;
+}
+.market_innerpage_heading h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.market_cart_list {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 30px 10px 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.mk_cart_top .pro_img {
+    width: 40%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.pro_nameinfo h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.pro_nameinfo .pro_stcolte {
+    display: flex;
+}
+.market_cart_list .mk_cart_top {
+    display: flex;
+}
+.pro_nameinfo .pro_stcolte p {
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+.market_cart_list .proudt_unit {
+    display: flex;
+    align-items: center;
+}
+.market_cart_list .proudt_unit p {
+    margin-bottom: 0;
+}
+.proudt_unit .pro_qty_part {
+    display: flex;
+    align-items: center;
+}
+.proudt_unit .pro_qty_part label {
+    margin-bottom: 0;
+    padding-right: 10px;
+}
+.proudt_unit .pro_qty_part .form-control {
+    height: 30px;
+    width: 100px;
+    line-height: 1.25;
+    padding-top: 2px;
+    text-align: center;
+}
+.market_cart_list .market_price {
+    font-size: 16px;
+    padding: 10px 0;
+}
+.cartremoved_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.market_cart_total {
+    border: 1px solid var(--primariy);
+    border-radius: 4px;
+}
+.market_cart_total tr.border-buttom {
+    border-bottom: 1px solid var(--primariy);
+}
+.cartright_total {
+    padding: 15px;
+}
+.cartright_total h3 {
+    border-top: 1px solid #ddd;
+    padding: 7px 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartright_total a {
+    background: var(--primariy);
+    border-radius: 4px;
+    padding: 7px 30px;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid transparent;
+}
+.cartright_total a:hover{
+    border: 1px solid var(--primariy);
+    color: var(--primariy);
+    background: #fff;
+}
+
+/* ===-------- product Address details--------------==== */
+
+.market_address_section {
+    min-height: 550px;
+}
+.market_address_details {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+.market_address_details .btn-primary{
+    background: #fff;
+    padding: 7px 30px;
+    border: 1px solid var(--primariy);
+    color: var(--primariy);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-contact-info {
+    background: #333;
+    color: #7b7b7b;
+    font-size: 14px;
+}
+.footer-contact-info .textwidget > div > div {
+    display: flex;
+    align-items: center;
+}
+.footer-contact-info .textwidget > div > div > img {
+    margin-right: 15px;
+    max-width: 30px;
+}
+.footer-contact-info img {
+    filter: brightness(0) invert(1) contrast(0);
+}
+.footer-contact-info .textwidget > div > div a {
+    display: block;
+    color: #7b7b7b;
+    font-size: 13px;
+}
+.footer-section .footer-last {
+    background: #252525;
+    padding: 25px 0;
+    color: #7b7b7b;
+}

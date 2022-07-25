@@ -1,0 +1,83 @@
+CRITICAL - 2022-05-17 02:15:41 --> syntax error, unexpected end of file
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('collector/inven...', Array, true)
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Collector/DashboardController.php(186): view('collector/inven...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Collector\DashboardController->inventoryList()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Collector\DashboardController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 02:18:36 --> syntax error, unexpected end of file
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('collector/inven...', Array, true)
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Collector/DashboardController.php(186): view('collector/inven...', Array)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Collector\DashboardController->inventoryList()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Collector\DashboardController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 02:52:34 --> Argument 2 passed to view() must be of the type array, null given, called in /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/MemberController.php on line 29
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/MemberController.php(29): view('admin/layout/ad...', NULL)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\MemberController->memberAdd()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 03:09:54 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-17 03:14:38 --> Undefined variable: config
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/keyline1/...', 71, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->category()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 03:15:29 --> Class 'App\Controllers\Admin\CommonModel' not found
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\MemberController->memberAdd()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 03:15:47 --> Class 'App\Controllers\Admin\CommonModel' not found
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\MemberController->memberAdd()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 03:47:11 --> Call to a member function find_data() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\MemberController->checkCompanyName()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberController))
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-17 05:06:53 --> Unknown column 'c_name' in 'field list'
+CRITICAL - 2022-05-17 05:19:14 -->  route cannot be found while reverse-routing.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/MemberController.php(49): redirect('https://ecoex2....')
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\MemberController->memberAdd()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 05:21:16 -->  route cannot be found while reverse-routing.
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/MemberController.php(49): redirect('https://ecoex2....')
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\MemberController->memberAdd()
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberController))
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 06:12:56 --> Invalid argument supplied for foreach()
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Views/admin/layout/memberAddressProfile.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/keyline1/...', 51, Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include('/home/keyline1/...')
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/me...', Array, true)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/MemberController.php(191): view('admin/layout/me...', Array)
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\MemberController->memberAddressProfile('42')
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MemberController))
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,140 @@
+<?php 
+$currentURL = explode('/',$_SERVER['REQUEST_URI']);
+$currentContorller = $currentURL['2'];
+use App\Models\CommonModel;
+$this->common_model = new CommonModel();
+$site_setting       = $this->common_model->find_data('ecoex_setting', 'row');
+?>
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 adminsidebar_section">
+    <!-- Brand Logo -->
+    <a href="<?php echo base_url('admin/');?>" class="brand-link" style="height: 56px;">
+      <img src="<?php echo site_url('');?>/writable/uploads/<?=$site_setting->logo?>" alt="<?=$site_setting->websiteName?>" class="brand-image img-circle elevation-3"
+           style="opacity: 1;border-radius:0px;">
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">          
+          <li class="nav-item menu-open">
+            <a href="<?php echo base_url('admin/');?>" class="nav-link <?php if($currentContorller == ''){ echo 'active'; } ?> ">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-tasks"></i> <span>Masters</span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="nav-link <?php if($currentContorller == 'category'){ echo 'active'; } ?>" href="<?php echo base_url('admin/category');?>">Business Category
+                </a>
+              </li>
+              <li>
+                <a class="nav-link <?php if($currentContorller == 'manageListingPage'){ echo 'active'; } ?>" href="<?php echo base_url('admin/manageListingPage');?>">Manage Listing Page
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/memberCategory');?>" class="nav-link <?php if($currentContorller == 'memberCategory'){ echo 'active'; } ?>">Member Type
+                </a>
+              </li>                            
+              <li>
+                <a href="<?php echo base_url('admin/documentList');?>" class="nav-link <?php if($currentContorller == 'documentList'){ echo 'active'; } ?>">Document List
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/staticContentList');?>" class="nav-link <?php if($currentContorller == 'staticContentList'){ echo 'active'; } ?>">Static Content
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/stateList');?>" class="nav-link <?php if($currentContorller == 'stateList'){ echo 'active'; } ?>">State
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/districtList');?>" class="nav-link <?php if($currentContorller == 'districtList'){ echo 'active'; } ?>">District
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/cityList');?>" class="nav-link <?php if($currentContorller == 'cityList'){ echo 'active'; } ?>">City
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-envelope"></i> <span>Email Management</span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="<?php echo base_url('admin/emailSetting');?>" class="nav-link <?php if($currentContorller == 'emailSetting'){ echo 'active'; } ?>">Email Template Setting
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/emailLogs');?>" class="nav-link <?php if($currentContorller == 'emailLogs'){ echo 'active'; } ?>">Email Logs
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-users"></i> <span>Member Management</span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="<?php echo base_url('admin/approvalRequest');?>" class="nav-link <?php if($currentContorller == 'approvalRequest'){ echo 'active'; } ?>">Pending Members
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/memberList');?>" class="nav-link <?php if($currentContorller == 'memberList'){ echo 'active'; } ?>">Approved Members
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-sticky-note"></i> <span>Post Management</span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="<?php echo base_url('admin/unapprovedPost');?>" class="nav-link <?php if($currentContorller == 'unapprovedPost'){ echo 'active'; } ?>">Unapproved Posts
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/currentPost');?>" class="nav-link <?php if($currentContorller == 'currentPost'){ echo 'active'; } ?>">Current Posts
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo base_url('admin/expiredPost');?>" class="nav-link <?php if($currentContorller == 'expiredPost'){ echo 'active'; } ?>">Expired Posts
+                </a>
+              </li>
+            </ul>
+          </li>          
+          
+          
+          <!-- <li class="nav-item menu-open">
+            <a href="<?php echo base_url('admin/manageEnquiry');?>" class="nav-link <?php if($currentContorller == 'manageEnquiry'){ echo 'active'; } ?>">
+              <i class="nav-icon fas fa-business-time"></i>
+              <p>Manage Enquiry</p>
+            </a>
+          </li> -->
+          <!-- <li class="nav-item menu-open">
+            <a href="<?php echo base_url('admin/enquiryApp');?>" class="nav-link <?php if($currentContorller == 'emailLogs'){ echo 'active'; } ?>">
+              <i class="nav-icon fas fa-envelope"></i>
+              <p>
+               Enquiry From App
+              </p>
+            </a>
+          </li> -->
+          <li class="nav-item menu-open">
+            <a href="<?php echo base_url('admin/inquiryList');?>" class="nav-link <?php if($currentContorller == 'inquiryList'){ echo 'active'; } ?>">
+              <i class="nav-icon fas fa-envelope"></i>
+              <p>Manage Inventory Inquiry</p>
+            </a>
+          </li>
+          <li class="nav-item menu-open">
+            <p>&nbsp;</p>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

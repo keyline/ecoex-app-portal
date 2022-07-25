@@ -1,0 +1,80 @@
+ERROR - 2022-06-02 02:40:13 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:40:13 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, '', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:41:10 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:41:10 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:41:11 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:41:11 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:41:11 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:41:11 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:41:12 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:41:12 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:41:12 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:41:12 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:41:12 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:41:12 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:41:12 --> Column 'inquiry_status' in where clause is ambiguous
+CRITICAL - 2022-06-02 02:41:12 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(572): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 02:57:04 --> Not unique table/alias: 'ecoex_business_category'
+CRITICAL - 2022-06-02 02:57:04 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(576): App\Models\CommonModel->find_data('ecoex_target_in...', 'row', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 04:25:00 --> Column 'c_id' in where clause is ambiguous
+CRITICAL - 2022-06-02 04:25:00 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(588): App\Models\CommonModel->find_data('ecoex_target_in...', 'array', Array, 'ecoex_target_in...', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageInquiries()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

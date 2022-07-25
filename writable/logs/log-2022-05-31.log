@@ -1,0 +1,33 @@
+CRITICAL - 2022-05-31 01:55:31 --> Call to a member function getPost() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('otp_validation', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/UserController.php(225): view('otp_validation', Array)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\UserController->otp_validation('109')
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-05-31 06:51:28 --> Unknown column 'updatedAt' in 'field list'
+ERROR - 2022-05-31 07:29:33 --> Unknown column 'updatedAt' in 'field list'
+ERROR - 2022-05-31 07:34:54 --> Unknown column 'updatedAt' in 'field list'
+CRITICAL - 2022-05-31 07:43:29 --> Call to a member function find_data() on null
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/ed...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(671): view('admin/layout/ed...', Array)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->editCompanyUnit('2', '1')
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-31 07:45:42 --> Class 'CommonModel' not found
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(210): include()
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/Common.php(1089): CodeIgniter\View\View->render('admin/layout/ed...', Array, true)
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Admin/AdminController.php(671): view('admin/layout/ed...', Array)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Admin\AdminController->editCompanyUnit('2', '1')
+#5 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#6 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

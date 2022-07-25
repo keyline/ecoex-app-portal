@@ -1,0 +1,16 @@
+ERROR - 2022-06-22 11:44:42 --> Unknown column 'ecoex_user_table.user_membership_type' in 'on clause'
+CRITICAL - 2022-06-22 11:44:42 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Home.php(39): App\Models\CommonModel->find_data('ecoex_inventory', 'array', Array, '', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-22 11:44:56 --> Unknown column 'ecoex_user_table.user_membership_type' in 'on clause'
+CRITICAL - 2022-06-22 11:44:56 --> Call to a member function getNumRows() on bool
+#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Home.php(39): App\Models\CommonModel->find_data('ecoex_inventory', 'array', Array, '', Array)
+#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
