@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-     public $baseURL = 'http://localhost/ecoex_portaldev/';
+     public $baseURL = 'https://ecoex2.keylines.net.in/';
     
  
 
