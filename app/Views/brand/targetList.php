@@ -48,7 +48,7 @@
             </div>
             <div class="col-md-6">
               <div class="market_tagettop_btn">
-                <a href="/brand/target/" class="nav-link greenbtn"> Add New</a>
+                <a href="<?=base_url('/brand/target/')?>" class="nav-link greenbtn"> Add New</a>
                 <!-- <a href="javascript:void(0)" onclick="openNavTablefilter()" class="nav-link filter_btn"><i class="fa fa-bell"></i> Filter</a> -->
               </div>
             </div>
@@ -134,15 +134,15 @@
                                 <a href="targetToInquiry/<?php echo encoded($target['target_id']);?>" class="filter_btn">Convert To Inquiry</a>
                               <?php } else {?>
                                 <p style="color: #48974e; font-weight: bold;">Already Converted To Inquiry</p>
-                                <p>
+                                <!-- <p>
                                   <a class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal<?=$target['target_id']?>">Inquiry Share List</a>
-                                </p>
+                                </p> -->
                               <?php }?>
                               <?php if(!$target['visibility']){?>
                                 <!-- <a href="javascript:void(0);" data-id="<?=$target['target_id']?>" data-visibility="1" data-link="brand/targetList" data-action="brand/changeVisibility" class="btn btn-success visibility">Public</a> -->
-                                <a href="javascript:void(0);" data-toggle="modal" data-target="#privateModal<?=$target['target_id']?>" class="btn btn-success visibility">Public</a>
+                                <!-- <a href="javascript:void(0);" data-toggle="modal" data-target="#privateModal<?=$target['target_id']?>" class="btn btn-success visibility">Public</a> -->
                               <?php } else {?>
-                                <a href="javascript:void(0);" data-id="<?=$target['target_id']?>" data-visibility="0" data-link="brand/targetList" data-action="brand/changeVisibility" class="btn btn-danger visibility">Private</a>
+                                <!-- <a href="javascript:void(0);" data-id="<?=$target['target_id']?>" data-visibility="0" data-link="brand/targetList" data-action="brand/changeVisibility" class="btn btn-danger visibility">Private</a> -->
                               <?php }?>
                             </div>
                           </td>

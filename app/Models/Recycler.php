@@ -75,11 +75,11 @@ class Recycler extends Model{
                 
                 if(isset($stateTargetData->id)){
                     
-                       $query = "UPDATE `ecoex_inventory_by_state` SET `req_qty` = '".$stateQty."',`rate` = '".$stateRate."',`updatedAt` = now() WHERE 
+                       $query = "UPDATE `ecoex_inventory_by_state` SET `req_qty` = '".$stateQty."', `remaining_qty` = '".$stateQty."', `rate` = '".$stateRate."',`updatedAt` = now() WHERE 
                        `inventory_id` = '".$data['inventoryID']."'  && `state_id` = '".$stateValue."'";
                         $this->db->query($query);
                 } else {
-                    $query = "INSERT INTO `ecoex_inventory_by_state` VALUES(null,'".$data['storeId']."','".$data['inventoryID']."','".$stateValue."','".$stateQty."',
+                    $query = "INSERT INTO `ecoex_inventory_by_state` VALUES(null,'".$data['storeId']."','".$data['inventoryID']."','".$stateValue."','".$stateQty."','".$stateQty."',
                     '".$stateRate."',now(),now()) ";
                     $this->db->query($query);
                 }

@@ -77,11 +77,11 @@ class Brand extends Model{
                        $this->db->query($query);
                     }
                     
-                       $query = "UPDATE `ecoex_target_by_state` SET `req_qty` = '".$stateQty."',`updatedAt` = now() WHERE `target_id` = '".$data['targetId']."' 
+                       $query = "UPDATE `ecoex_target_by_state` SET `req_qty` = '".$stateQty."',`remaining_qty` = '".$stateQty."',`updatedAt` = now() WHERE `target_id` = '".$data['targetId']."' 
                        && `state_id` = '".$stateValue."'";
                         $this->db->query($query);
                 } else {
-                    $query = "INSERT INTO `ecoex_target_by_state` VALUES(null,'".$data['storeId']."','".$data['targetId']."','".$stateValue."','".$stateQty."',now(),now()) ";
+                    $query = "INSERT INTO `ecoex_target_by_state` VALUES(null,'".$data['storeId']."','".$data['targetId']."','".$stateValue."','".$stateQty."','".$stateQty."',now(),now()) ";
                     $this->db->query($query);
                 }
             }

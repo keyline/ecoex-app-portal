@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controllers\Brand; // Controller namespace
 
 use App\Controllers\BaseController;
@@ -607,7 +606,7 @@ class DashboardController extends BaseController
               }
           }
       }
-      //pr($this->request->getPost(),false);
+      pr($this->request->getPost(),false);
 
       $fields = [
                 'inquiry_start_date'      => date_format(date_create($this->request->getPost('inquiry_start_date')), "Y-m-d"),
@@ -616,67 +615,90 @@ class DashboardController extends BaseController
                 'inquiry_end_time'        => date_format(date_create($this->request->getPost('inquiry_end_time')), "H:i:s"),
                 'description'             => $this->request->getPost('description'),
                 'attachment'              => $uploadedAttachment,
-                'visibility'              => $this->request->getPost('visibility'),
-                'inquiry_status'          => 1
+                'visibility'              => $this->request->getPost('visibility')
         ];
       $this->common_model->save_data('ecoex_target', $fields, $this->request->getPost('target_id'), 'target_id');
-      //pr($fields);
+      pr($fields);
 
       $member_type            = $this->request->getPost('member_type');
       $target_state_wise_ids  = explode(",", $this->request->getPost('target_state_wise_ids'));
-      if(count($member_type)>0){
-        for($p=0;$p<count($member_type);$p++){
-          $user_id = $this->request->getPost('user_id'.$member_type[$p]);
+      if(count($target_state_wise_ids)>0){
+        for($p=0;$p<count($target_state_wise_ids);$p++){
 
-          if(count($target_state_wise_ids)>0){
-            for($q=0;$q<count($target_state_wise_ids);$q++){
+          if(count($member_type)>0){
+            for($q=0;$q<count($member_type);$q++){
+              $getMembers = $this->common_model->find_data('ecoex_user_table', 'array', ['user_membership_type' => $member_type[$q], 'userStatus' => 2]);
+              if($getMembers){
+                foreach($getMembers as $getMember){
 
-              if(count($user_id)){
-                for($r=0;$r<count($user_id);$r++){
-                  $fields2 = [
-                          'target_id'             => $this->request->getPost('target_id'),
-                          'target_state_id'       => $target_state_wise_ids[$q],
-                          'member_type'           => $member_type[$p],
-                          'user_id'               => $user_id[$r]
-                  ];
-                  //pr($fields2, false);
-                  $this->common_model->save_data('ecoex_target_state_shares', $fields2, '', 'id');
-
+                  /* inquiry number generate */                    
+                    // $orderBy[0]   = ['field' => 'id', 'type' => 'DESC'];
+                    // $checkInquiry = $this->common_model->find_data('ecoex_business_inquiries', 'row', '', '', '', '', $orderBy);
+                    // if($checkInquiry){
+                    //   $slNo = $checkInquiry->sl_no+1;
+                    //   $inquiry_no = str_pad($slNo,6,0,STR_PAD_LEFT);
+                    // } else {
+                    //   $slNo = 1;
+                    //   $inquiry_no = str_pad($slNo,6,0,STR_PAD_LEFT);
+                    // }
+                  /* inquiry number generate */
+                  // $getTargetDetails = $this->common_model->find_data('ecoex_target_by_state', 'row', ['id' => $target_state_wise_ids[$p]]);
+                  // $getMemberTypeName = $this->common_model->find_data('ecoex_member_category', 'row', ['member_id' => $getMember->user_membership_type]);
+                  // $fields = [
+                  //         'sl_no'                   => $slNo,
+                  //         'inquiry_no'              => $inquiry_no,
+                  //         'buyer_type'              => 'Brand',
+                  //         'buyer_id'                => $userId,
+                  //         'seller_type'             => (($getMemberTypeName)?$getMemberTypeName->member_type:''),
+                  //         'seller_id'               => $getMember->user_id,
+                  //         'inventory_id'            => $this->request->getPost('target_id'),
+                  //         'inventory_details_id'    => $target_state_wise_ids[$p],
+                  //         'require_qty'             => (($getTargetDetails)?$getTargetDetails->req_qty:0),
+                  //         'inquiry_start_date'      => date_format(date_create($this->request->getPost('inquiry_start_date')), "Y-m-d"),
+                  //         'inquiry_start_time'      => date_format(date_create($this->request->getPost('inquiry_start_time')), "H:i:s"),
+                  //         'inquiry_end_date'        => date_format(date_create($this->request->getPost('inquiry_end_date')), "Y-m-d"),
+                  //         'inquiry_end_time'        => date_format(date_create($this->request->getPost('inquiry_end_time')), "H:i:s"),
+                  //         'description'             => $this->request->getPost('description'),
+                  //         'attachment'              => $uploadedAttachment,
+                  //         'require_documents'       => $documentRequired
+                  // ];
+                  // $this->common_model->save_data('ecoex_business_inquiries', $fields, '', 'id');
+                  
                   /* inventory */                      
                       $join2[0]                 = ['table' => 'ecoex_target_by_state', 'field' => 'target_id', 'table_master' => 'ecoex_target', 'field_table_master' => 'target_id', 'type' => 'INNER'];
-                      $conditions               = ['ecoex_target_by_state'.'.id' => $target_state_wise_ids[$q]];
-                      $inventory                = $this->common_model->find_data('ecoex_target', 'row', $conditions, '', $join2);                      
+                      $conditions               = ['ecoex_target_by_state'.'.id' => $target_state_wise_ids[$p]];
+                      $inventory                = $this->common_model->find_data('ecoex_target', 'row', $conditions, '', $join2);
+                      //$db = \Config\Database::connect();
+                      //echo $db->getLastQuery();
+                      //pr($inventory);
+                      //die;
                   /* inventory */
-
-                  $getMember = $this->common_model->find_data('ecoex_user_table', 'row', ['user_id' => $user_id[$r]]);                  
 
                   /* business inquiry email */
                     $fields['site_setting'] = $this->common_model->find_data('ecoex_setting', 'row');
                     $fields['common_model'] = $this->common_model;
                     $fields['inventory']    = $inventory;
-                    $fields['seller_id']    = $user_id[$r];
                     $html                   = view('email-template/inquiry-request',$fields);
-                    //echo $html;die;
-                    $subject                = 'New Post :: '.$fields['site_setting']->websiteName;
+                    $subject                = 'New Inquiry '.$inquiry_no.' :: '.$fields['site_setting']->websiteName;
                     $this->common_model->sendEmail((($getMember)?$getMember->user_email:''),$subject,$html);
                   /* business inquiry email */
 
                   /* insert email logs */
-                    $insertData = [
-                        'userID'    => $user_id[$r],
-                        'email'     => $html
-                    ];
-                    $this->common_model->save_data('ecoex_email_log', $insertData, '', 'id');
+                    // $insertData = [
+                    //     'userID'    => (($getMember)?$getMember->user_id:''),
+                    //     'email'     => $html
+                    // ];
+                    // $this->common_model->save_data('ecoex_email_log', $insertData, '', 'id');
                   /* insert email logs */
+
                 }
               }
-
             }
           }
+
         }
       }
-      
-      //die;
+      $updatetarget = $this->common_model->save_data('ecoex_target', ['inquiry_status' => 1], $this->request->getPost('target_id'), 'target_id');
       return redirect()->to(base_url('brand/targetList'));
     } else {
       return redirect()->to(base_url('login'));

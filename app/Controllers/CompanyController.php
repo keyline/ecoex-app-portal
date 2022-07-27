@@ -49,7 +49,7 @@ class CompanyController extends BaseController
                 $emailTemplate = str_replace("{name}", $companyUserData[0]['user_name'], $verificationEmailTemplate->content);                
                 $emailTemplate1 = str_replace("{company}", $companyData[0]['c_name'], $emailTemplate);                
                 $message = str_replace("{link}", $verificationLink, $emailTemplate1);
-                mail($to,$subject,$message, $headers);
+                //mail($to,$subject,$message, $headers);
 
                 $session->set('storeId',$storeDetail->c_id);
                 // if($companyUserData[0]['user_membership_type'] == '1'){

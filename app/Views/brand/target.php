@@ -216,10 +216,11 @@
          $("#subCategory").html('');
          $("#item").html('');
         var catId = $(this).val();
+        var baseUrl = '<?=base_url()?>';
           $.ajax({   
             type: "GET",
             data: { parent: catId,name:'Sub Category' },
-            url: "/getBusinessCategory.php",
+            url: baseUrl+"/getBusinessCategory.php",
             dataType: "html",
             success: function(response){
                 $("#subCategory").html(response);
@@ -230,10 +231,11 @@
          $("#product").html('');
          $("#item").html('');
         var subCatId = $(this).val();
+        var baseUrl = '<?=base_url()?>';
           $.ajax({   
             type: "GET",
             data: { parent: subCatId,name:'Product' },
-            url: "/getBusinessCategory.php",             
+            url: baseUrl+"/getBusinessCategory.php",             
             dataType: "html",
             success: function(response){
                 $("#product").html(response);
@@ -243,10 +245,11 @@
      $("#product").change(function(){  
          $("#item").html('');
         var subCatId = $(this).val();
+        var baseUrl = '<?=base_url()?>';
           $.ajax({   
             type: "GET",
             data: { parent: subCatId,name:'Item' },
-            url: "/getBusinessCategory.php",             
+            url: baseUrl+"/getBusinessCategory.php",             
             dataType: "html",
             success: function(response){
                 $("#item").html(response);

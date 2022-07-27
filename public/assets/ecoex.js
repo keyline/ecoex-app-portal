@@ -1,7 +1,9 @@
 $(function() {
     
 });
-var base_url = 'http://localhost/ecoex_portaldev/';
+var base_url = 'http://localhost/ecoex_portaldev/ecoex-app-portal/';
+//var base_url = 'https://ecoex2.keylines.net.in/';
+
 $(".changePassword").submit(function (e) {
 	e.preventDefault();
 	let formAction = $(this).attr('action');
@@ -176,7 +178,7 @@ function getFilter(value){
     });        
   	$.ajax({
 	      type: "POST",
-	      url: "/getFilterData",          
+	      url: base_url+"/getFilterData",          
 	      data: {
 	        package_request_sorting       : package_request_sorting,
 	        subcatAttributeArray        : subcatAttributeArray,
@@ -208,7 +210,7 @@ function getFilter(value){
 					                  	<div class="marketprod_saletag">'+listing_type_html+'</div>\
 					                </div>\
 					                <div class="market_name">\
-					                  <h2>'+item.item+'</h2>\
+					                  <h2 style="font-size: 17px;">'+item.item+'</h2>\
 					                  <div class="marketplae_price">\
 					                    Rs '+item.rate+' /'+item.unit+'\
 					                  </div>\
@@ -218,11 +220,6 @@ function getFilter(value){
 					                  <p>Collection : <span>'+item.month+' '+item.year+'</span></p>\
 					                  <p>Quantity : <span>'+item.qty+''+item.unit+'</span></p>\
 					                  <p><a href="'+viewDetailsLink+'" style="float: right;margin-top: -26px;">View Details</a></p>\
-				                      <div class="marketpro_timetogo">\
-				                        <div class="marketpro_timeinfo">\
-				                          <i class="fa fa-clock"></i> '+item.posting_datetime+' Ago\
-				                        </div>\
-				                      </div>\
 					                </div>\
 				              	</div>\
 				            </div>';

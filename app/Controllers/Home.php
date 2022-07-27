@@ -4,7 +4,6 @@ use App\Models\Recycler;
 use App\Models\CommonModel;
 class Home extends BaseController
 {
-    /* change test */
     public function index()
     {
         $session                = \Config\Services::session();
@@ -95,7 +94,7 @@ class Home extends BaseController
                                         'item'              => $item->name,
                                         'state'             => $state->state_title,
                                         'rate'              => number_format($rateValue,2),
-                                        'qty'               => $row->req_qty,
+                                        'qty'               => $row->remaining_qty,
                                         'unit'              => $unit->name,
                                         'month'             => $this->common_model->monthName($row->month),
                                         'year'              => $row->year,
@@ -149,7 +148,7 @@ class Home extends BaseController
                         'item'              => $item->name,
                         'state'             => $state->state_title,
                         'rate'              => number_format(0,2),
-                        'qty'               => $row->req_qty,
+                        'qty'               => $row->remaining_qty,
                         'unit'              => $unit->name,
                         'month'             => $this->common_model->monthName($row->month),
                         'year'              => $row->year,
@@ -196,7 +195,7 @@ class Home extends BaseController
                         'item'              => $item->name,
                         'state'             => $state->state_title,
                         'rate'              => number_format($row->rate,2),
-                        'qty'               => $row->req_qty,
+                        'qty'               => $row->remaining_qty,
                         'unit'              => $unit->name,
                         'month'             => $this->common_model->monthName($row->month),
                         'year'              => $row->year,
@@ -340,7 +339,7 @@ class Home extends BaseController
                                         'item'              => $item->name,
                                         'state'             => $state->state_title,
                                         'rate'              => $rateValue,
-                                        'qty'               => $row->req_qty,
+                                        'qty'               => $row->remaining_qty,
                                         'unit'              => $unit->name,
                                         'month'             => $this->common_model->monthName($row->month),
                                         'year'              => $row->year,
@@ -415,7 +414,7 @@ class Home extends BaseController
                             'item'              => $item->name,
                             'state'             => $state->state_title,
                             'rate'              => 0,
-                            'qty'               => $row->req_qty,
+                            'qty'               => $row->remaining_qty,
                             'unit'              => $unit->name,
                             'month'             => $this->common_model->monthName($row->month),
                             'year'              => $row->year,
@@ -488,7 +487,7 @@ class Home extends BaseController
                             'item'              => $item->name,
                             'state'             => $state->state_title,
                             'rate'              => $row->rate,
-                            'qty'               => $row->req_qty,
+                            'qty'               => $row->remaining_qty,
                             'unit'              => $unit->name,
                             'month'             => $this->common_model->monthName($row->month),
                             'year'              => $row->year,
@@ -611,7 +610,7 @@ class Home extends BaseController
                 'item'                      => $item->name,
                 'state'                     => $state->state_title,
                 'rate'                      => number_format($row->rate,2),
-                'qty'                       => $row->req_qty,
+                'qty'                       => $row->remaining_qty,
                 'unit'                      => $unit->name,
                 'month'                     => $this->common_model->monthName($row->month),
                 'year'                      => $row->year,
@@ -710,6 +709,7 @@ class Home extends BaseController
                 $fields = [
                     'sl_no'                 => $slNo,
                     'inquiry_no'            => $inquiry_no,
+                    'listing_from'          => $listing_from,
                     'buyer_type'            => $buyer_type,
                     'buyer_id'              => $buyer_id,
                     'seller_type'           => $seller_type,
