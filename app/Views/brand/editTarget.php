@@ -232,10 +232,11 @@
     $(document).ready(function(){ 
         $("#category").change(function(){   
             var catId = $("#category").val();
+            var baseUrl = '<?=base_url()?>';
             $.ajax({   
                 type: "GET",
                 data: { parent: catId,name:'Sub Category' },
-                url: "/getBusinessCategory.php",             
+                url: baseUrl+"/getBusinessCategory.php",             
                 dataType: "html",   //expect html to be returned                
                 success: function(response){
                         $("#subCategory").html(response);
@@ -246,11 +247,12 @@
             // $("#subCategory").html('');
             // $("#product").html('');
             // $("#item").html('');
-            var subCatId = $("#subCategory").val();        
+            var subCatId = $("#subCategory").val();
+            var baseUrl = '<?=base_url()?>';
             $.ajax({   
                 type: "GET",
                 data: { parent: subCatId,name:'Product' },
-                url: "/getBusinessCategory.php",             
+                url: baseUrl+"/getBusinessCategory.php",             
                 dataType: "html",   //expect html to be returned                
                 success: function(response){
                     $("#product").html('');
@@ -261,10 +263,11 @@
         $("#product").change(function(){  
             $("#item").html('');
             var subCatId = $("#product").val();
+            var baseUrl = '<?=base_url()?>';
               $.ajax({   
                 type: "GET",
                 data: { parent: subCatId,name:'Item' },
-                url: "/getBusinessCategory.php",             
+                url: baseUrl+"/getBusinessCategory.php",             
                 dataType: "html",   //expect html to be returned                
                 success: function(response){
                     $("#item").html('');
@@ -287,11 +290,12 @@
 
         let inventoryType   = '<?=$targetData->inventory_type?>';
         let memberType      = '<?=$user_member_type?>';
-        let url             = 'brand/getMainCategory/';
+        let url             = '/brand/getMainCategory/';
         let categoryId      = '<?=$targetData->categoryId?>';
+        var baseUrl         = '<?=base_url()?>';
         $.ajax({
             type: "GET",
-            url: base_url + url,
+            url: baseUrl + url,
             data: {
                 inventoryType   : inventoryType,
                 memberType      : memberType

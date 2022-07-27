@@ -231,5 +231,41 @@ function closenotifilterNav() {
   <script src="<?php echo site_url('public');?>/assets/sweetalert2.all.min.js"></script>
   <script src="<?php echo site_url('public');?>/assets/common-function.js"></script>
   <script src="<?php echo site_url('public');?>/assets/ecoex.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('#example2').DataTable({
+            paging: false
+        });
+        $('#example3').DataTable({
+            paging: false
+        });
+        $('#example4').DataTable({
+            paging: false
+        });
+        $('#example5').DataTable({
+            paging: false
+        });
+        $('#example9').DataTable({
+            paging: false
+        });
+        $('#example12').DataTable({
+            paging: false
+        });
+        $('#example14').DataTable({
+            paging: false
+        });
+        $('#example15').DataTable({
+            paging: false
+        });
+        $('#example16').DataTable({
+            paging: false
+        });
+    });
+  </script>
+
 </body>
 </html>

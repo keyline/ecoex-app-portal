@@ -1182,7 +1182,12 @@ class AdminController extends BaseController
           }
       }
     }
-    $userData = ['user_membership_type' => $this->request->getPost('member_id')];
+    $convert_to_inquiry_members = (($this->request->getPost('convert_to_inquiry_members') != '')?$this->request->getPost('convert_to_inquiry_members'):[]);
+    $userData = [
+      'user_membership_type'        => $this->request->getPost('member_id'),
+      'convert_to_inquiry_members'  => json_encode($convert_to_inquiry_members)
+    ];
+    //pr($userData);
     $this->common_model->save_data('ecoex_user_table', $userData, $storeId, 'c_id');
     $data = [
             'storeID'=>$storeId,
@@ -1663,7 +1668,31 @@ class AdminController extends BaseController
                         'published'                             => 8
                     ];
         $this->common_model->save_data('ecoex_business_inquiries', $fields, $inquiryId, 'id');
-        
+
+        /* inquiry stock deduction */
+          $inquiryDetail    = $this->common_model->find_data('ecoex_business_inquiries', 'row', ['id' => $inquiryId]);
+          if($inquiryDetail){
+            $listing_from = $inquiryDetail->listing_from;
+            if($listing_from == 'Brand'){
+              $childTable           = 'ecoex_target_by_state';
+              $childField           = 'id';
+            } else {
+              $childTable           = 'ecoex_inventory_by_state';
+              $childField           = 'id';
+            }            
+            $conditions               = [$childTable.'.id' => $inquiryDetail->inventory_details_id];
+            $inventory                = $this->common_model->find_data($childTable, 'row', $conditions);
+            $require_qty = $inquiryDetail->require_qty;
+            if($inventory){
+              $remaining_qty = $inventory->remaining_qty;
+            } else {
+              $remaining_qty = 0;
+            }
+            $after_deduction_remaining_qty = $remaining_qty-$require_qty;
+            $this->common_model->save_data($childTable, ['remaining_qty' => $after_deduction_remaining_qty], $inquiryDetail->inventory_details_id, 'id');
+          }          
+        /* inquiry stock deduction */
+        //die;
         $site_setting           = $this->common_model->find_data('ecoex_setting', 'row');
         $fields['site_setting'] = $site_setting;
         $fields['common_model'] = $this->common_model;

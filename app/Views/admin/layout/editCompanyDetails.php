@@ -30,7 +30,7 @@
 ?>        
 		<div class="row">
         	<div class="col-md-12">
-                <form method="post" action="/admin/editMemberDetailsData" enctype="multipart/form-data">
+                <form method="post" action="<?=base_url('/admin/editMemberDetailsData')?>" enctype="multipart/form-data">
                     <input type="hidden" name="storeID" value="<?php echo $id;?>">
                     <input type="hidden" name="user_membership_type" value="<?php echo $companyUserDetail->user_membership_type;?>">
             	<div class="memberdetails_inner_section">
@@ -125,6 +125,23 @@
                                     <?php }?>
                                     <input type="file" class="form-control required" name="gstCard" accept="image/gif, image/jpeg, image/png">
                                 </div>
+                                <?php if($totalMember->user_membership_type == 1) {?>
+                                    <?php
+                                    $convert_to_inquiry_members = json_decode($totalMember->convert_to_inquiry_members);
+                                    ?>
+                                    <div class="col">
+                                        <h5>Convert To Inquiry Member Types</h5>
+                                        <select class="form-control" id="convert_to_inquiry_members" name="convert_to_inquiry_members[]" required multiple>
+                                            <option value="">Select Member Type</option>
+                                            <?php foreach ($membertype as $row) { ?>
+                                                <?php if($row['member_id'] != 1 && ($row['member_id'] == 2 || $row['member_id'] == 12)){?>
+                                                <option value="<?php echo $row['member_id']?>" <?php if(in_array($row['member_id'], $convert_to_inquiry_members)){?>selected<?php }?>><?php echo $row['member_type'] ?></option>
+                                                <?php  }?>
+                                            <?php  }?>
+                                        </select> 
+                                    </div>
+                                <?php }?>
+
                                 <div class="col">
                                     <h5>Business Category</h5>
                                     <!--<p><?php echo rtrim($categoryName,',');?></p>-->

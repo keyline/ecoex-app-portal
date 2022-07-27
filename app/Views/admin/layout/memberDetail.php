@@ -44,7 +44,7 @@
                         	<a href="/admin/approveCompanyData/<?php echo $totalMember->c_id;?>" class="member-approvebtn" onclick="return confirm('Are You Sure To Approve?')">Approve</a>
                         <?php } ?>    
                             <!-- <button type="button" class="btn approvebtn" id="click-show-comment">Comment</button> -->
-                        	<a href="/admin/editCompany/<?php echo encoded($totalMember->c_id);?>" class="btn approvebtn">Edit</a>
+                        	<a href="<?=base_url('/admin/editCompany/'.encoded($totalMember->c_id))?>" class="btn approvebtn">Edit</a>
                         </div>
                     </div>
                     

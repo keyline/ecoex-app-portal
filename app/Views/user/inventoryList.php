@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-6">
               <div class="market_tagettop_btn">
-                <a href="/user/inventory/" class="nav-link greenbtn"> Add New</a>
+                <a href="<?=base_url('/user/inventory/')?>" class="nav-link greenbtn"> Add New</a>
                 <!-- <a href="javascript:void(0)" onclick="openNavTablefilter()" class="nav-link filter_btn"><i class="fa fa-bell"></i> Filter</a> -->
               </div>
             </div>

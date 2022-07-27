@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'keyline1_userecoex',
-        'password' => '1Hw,WnixY{nx',
-        'database' => 'keyline1_ecoex1_protal',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'keyline1_ecoex_portal',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

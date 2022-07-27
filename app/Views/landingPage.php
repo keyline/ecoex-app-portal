@@ -67,8 +67,8 @@
                   if(empty($userData)) {
                   ?>
                     <ul class="loginbtn_right">
-                      <li class="head_register"><a href="/register">Register</a></li>
-                      <li class="head_login"><a href="/login">Login</a></li>
+                      <li class="head_register"><a href="<?=base_url('/register')?>">Register</a></li>
+                      <li class="head_login"><a href="<?=base_url('/login')?>">Login</a></li>
                     </ul>
                   <?php } else {?>
                     <?php
@@ -276,7 +276,7 @@
                       </div>
                     </div>
                     <div class="market_name">
-                      <h2><?=$row['item']?></h2>
+                      <h2 style="font-size: 17px;"><?=$row['item']?></h2>
                       <div class="marketplae_price">
                         Rs <?=$row['rate']?> /<?=$row['unit']?>
                       </div>
@@ -325,7 +325,7 @@
           						</div>
                     </div>
                     <div class="market_name">
-                      <h2><?=$row['item']?></h2>
+                      <h2 style="font-size: 17px;"><?=$row['item']?></h2>
                       <div class="marketplae_price">
                         Rs <?=$row['rate']?> /<?=$row['unit']?>
                       </div>

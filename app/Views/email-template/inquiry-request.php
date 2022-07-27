@@ -1,4 +1,6 @@
 <?php
+	//pr($inventory);
+
  	$join[0]            = ['table' => 'ecoex_member_category', 'field' => 'member_id', 'table_master' => 'ecoex_user_table', 'field_table_master' => 'user_membership_type', 'type' => 'INNER'];
     $conditions         = ['ecoex_user_table.user_id' => $seller_id];
     $seller             = $common_model->find_data('ecoex_user_table', 'row', $conditions, 'ecoex_user_table.*,ecoex_member_category.member_type', $join);
@@ -94,18 +96,14 @@
 		            <td align="left" class="titleblock" style="padding:7px 0">
 		               <font size="2" face="Open-sans, sans-serif" color="#222">
 		                  <span class="title" style="font-weight:bold;font-size:18px;line-height:33px;color: #48974e;">
-		                  	Congratulations ! You Have A New Inquiry From <?=$buyer_type?> !!!
+		                  	Congratulations ! You Have A New Inquiry From Brand !!!
 		                  </span>
 		               </font>
 		            </td>
 	            </tr>
               	<tr>	               
 	               <td>	                  
-	                  <table cellpadding="10" border="1" cellspacing="0" width="100%" style="border: 1px solid #ccc">
-	                     <tr>
-	                        <td>Inquiry Number</td>
-	                        <td><?=$inquiry_no?></td>
-	                     </tr>
+	                  <table cellpadding="10" border="1" cellspacing="0" width="100%" style="border: 1px solid #ccc">	                     
 	                     <tr>
 	                        <td>Category</td>
 	                        <td><?=(($category)?$category->name:'')?></td>
@@ -132,7 +130,7 @@
 	                     </tr>
 	                     <tr>
 	                        <td>Required Quantity</td>
-	                        <td><?=$require_qty?> <?=(($unit)?$unit->name:'')?></td>
+	                        <td><?=$inventory->remaining_qty?> <?=(($unit)?$unit->name:'')?></td>
 	                     </tr>
 	                     <?php if (array_key_exists("rate",$inventory)){?>
 		                     <tr>
@@ -144,7 +142,7 @@
 	                        <td>Required Documents</td>
 	                        <td>
 	                        	<?php
-	                        	$require_documents = json_decode($require_documents);
+	                        	$require_documents = json_decode($inventory->document_required);
 	                        	?>
 	                        	<ul>
 	                        		<?php
