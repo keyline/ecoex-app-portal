@@ -3,6 +3,7 @@ $(function() {
 });
 var base_url = 'http://localhost/ecoex_portaldev/ecoex-app-portal/';
 //var base_url = 'https://ecoex2.keylines.net.in/';
+
 $(".changePassword").submit(function (e) {
 	e.preventDefault();
 	let formAction = $(this).attr('action');
