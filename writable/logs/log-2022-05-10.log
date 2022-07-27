@@ -1,7 +1,0 @@
-CRITICAL - 2022-05-10 07:31:15 --> Argument 2 passed to view() must be of the type array, null given, called in /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php on line 376
-#0 /home/keyline1/public_html/dev/ecoex_portaldev/app/Controllers/Brand/DashboardController.php(376): view('brand/manageQuo...', NULL)
-#1 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(832): App\Controllers\Brand\DashboardController->manageQuotes()
-#2 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand\DashboardController))
-#3 /home/keyline1/public_html/dev/ecoex_portaldev/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#4 /home/keyline1/public_html/dev/ecoex_portaldev/index.php(37): CodeIgniter\CodeIgniter->run()
-#5 {main}
