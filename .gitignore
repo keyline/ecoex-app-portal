@@ -70,11 +70,12 @@ writable/debugbar/*
 
 writable/**/*.db
 writable/**/*.sqlite
+writable/**/*.sql
 
 php_errors.log
 
 #-------------------------
-# User Guide Temp Files
+# User Guide Temp Files 
 #-------------------------
 user_guide_src/build/*
 
